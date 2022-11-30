@@ -34,6 +34,7 @@ function RaiseJobForm({ properties }) {
     // We shouldn't be called if the form isn't valid, but check just in case.
     if (!canSubmit) {
       console.log('Naughty...');
+      return;
     }
 
     // Attempt to raise a new job.
